@@ -1,0 +1,37 @@
+DefaultLivery="BES16077.dds"
+Extra1="Window"
+Extra9="Helmet"
+
+HDVehicle=Lambo_Huracan.hdv
+Graphics=Lambo_Huracan_Lights_1.gen
+Spinner=Lambo_Huracan_Spinner_Lights_1.gen
+Cameras=Lambo_Huracan.cam
+GenString=1P2100X0O
+Sounds=Lambo_Huracan.sfx
+HeadPhysics=AMSGT3_HeadPhysics.ini
+Cockpit=Lambo_Huracan_Cpit.ini
+Upgrades=Lambo_Huracan_Upgrades.ini
+
+OpponentFilter="Lamborghini Huracan GT3 2015"
+
+
+Number=77
+Team="Attempto Racing LMBH"
+PitGroup="Group15"
+Driver1="Nicolas Armindo"
+Driver2="Juergen Haering"
+Driver3="Clement Mateu"
+Description="GT3G1: AMS GT3 Series" //#77 - Lamborghini Huracan GT3"
+Engine="Lamborghini 5.2 L V10"
+Manufacturer="Lamborghini"
+Classes="LAMBH"
+
+FullTeamName="Attempto Racing LMBH"
+TeamFounded=2015
+TeamHeadquarters="Italy"
+TeamStarts=0
+TeamPoles=0
+TeamWins=0
+TeamWorldChampionships=0
+
+Category="AMS GT3 Series, Lamborghini, 2015 Huracan GT3"

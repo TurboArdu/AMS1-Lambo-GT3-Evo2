@@ -1,0 +1,14 @@
+Gilles Lallemant
+{
+	Aggression=32
+	Reputation=32
+	Courtesy=16
+	Composure=33
+	Speed=95
+	Crash=56
+	Recovery=61
+	TireManagement=71
+	StartSkill=80
+	CompletedLaps=85607
+	MinRacingSkill=80
+}

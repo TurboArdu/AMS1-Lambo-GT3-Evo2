@@ -1,0 +1,14 @@
+Wolf Silverster
+{
+	Aggression=90
+	Reputation=19
+	Courtesy=33
+	Composure=1
+	Speed=90
+	Crash=98
+	Recovery=31
+	TireManagement=13
+	StartSkill=94
+	CompletedLaps=96529
+	MinRacingSkill=78
+}

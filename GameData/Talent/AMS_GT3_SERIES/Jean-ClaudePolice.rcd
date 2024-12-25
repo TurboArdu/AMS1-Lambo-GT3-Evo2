@@ -1,0 +1,14 @@
+Jean-Claude Police
+{
+	Aggression=40
+	Reputation=55
+	Courtesy=45
+	Composure=48
+	Speed=94
+	Crash=96
+	Recovery=1
+	TireManagement=13
+	StartSkill=84
+	CompletedLaps=26423
+	MinRacingSkill=78
+}

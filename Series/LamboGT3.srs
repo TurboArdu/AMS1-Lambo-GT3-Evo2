@@ -1,0 +1,202 @@
+//v1.0.5.
+//AMS GT3 SERIES. DO NOT REUPLOAD WITHOUT PERMISSION.
+//*******************************************************************************
+//Season Info:
+Mod Name = AMS GT3 SERIES
+Track Filter = StockV8
+Vehicle Filter = NSX AM05 AM12 R8_09 R8_12 R8_15 BCON ALPB6 BM3 M6 M8 Z4_10 Z4_12 C7R CADDY Z06R VIP06 F430 458 488 FGT07 FDGTE GIN55 P45C SCG JAG12 JAG07 FGT13 LAMBG LAMBH LEXRCF LOTEX MC3 MCL650 MCLMP4 AMG15 AMG12 NGTR 991 997_09 997_10 997_13 PZR RAD RenS1 CAMSRN VP13
+SafetyCar = AudiR8GT3_SC.veh
+ID=161
+//Order=161
+MultiplePerformances=1
+
+Matchmaker = match.reizastudios.com
+Matchmaker TCP Port = 40001
+Matchmaker UDP Port = 40002
+Loading Bar Color = 13244190
+
+OvertakingRadiusRiskBypass = 600 //radius in meter, from this radius and above the AI will be bypassing, bellow it will not
+OvertakingWaypointsAhead = 15 //Number of waypoints ahead of the current one to calculate the radius
+
+Max Opponents = 99  // maximum opponents in practice/quick race/grand prix/championship
+Min Championship Opponents = 5 // minimum opponents in championship only
+
+ConfigOverrides
+{
+DriversDir=GAMEDATA\TALENT\AMS_GT3_SERIES\
+}
+
+// Seasons:
+
+Season = AMS GT3 SERIES
+{
+ FullSeasonName = AMS GT3 SERIES
+ BaseCreditMult = 0.0
+ MinExperience = 0
+ EntryFee = 0
+ Vehicle Filter = |NSX AM05 AM12 R8_09 R8_12 R8_15 BCON ALPB6 BM3 M6 M8 Z4_10 Z4_12 C7R CADDY Z06R VIP06 F430 458 488 FGT07 FDGTE GIN55 P45C SCG JAG12 JAG07 FGT13 LAMBG LAMBH LEXRCF LOTEX MC3 MCL_650 MCL_MP4 AMG15 AMG12 NGTR 991 997_09 997_10 997_13 PZR RAD RenS1 CAMSRN VP13
+ SceneOrder
+ {
+ } 
+
+ SeasonScoringInfo
+ {
+  FirstPlace = 25
+  SecondPlace = 18
+  ThirdPlace = 15
+  FourthPlace = 12
+  FifthPlace = 10
+  SixthPlace = 8
+  SeventhPlace = 6
+  EighthPlace = 4
+  NinthPlace = 2
+  Place10 = 1
+ }
+}
+
+DefaultScoring
+{
+  // SESSION TIMES AND DURATIONS
+  FormationSpeedKPH = 100
+  FormationAndStart=0  
+  NumberOfFormationLaps = 1
+  HeadlightsRequired = false 
+  TestDayDay = Thursday
+  TestDayStart = 8:30
+  Practice1Day = Friday
+  Practice1Start = 10:00
+  Practice1Duration = 90
+  Practice2Day = Friday
+  Practice2Start = 14:00
+  Practice2Duration = 90
+  Practice3Day = Saturday
+  Practice3Start = 11:00
+  Practice3Duration = 60
+  QualifyDay = Saturday
+  QualifyStart = 14:00
+  QualifyDuration = 60
+  QualifyLaps = 20
+  WarmupDay = Sunday
+  WarmupStart = 9:00
+  WarmupDuration = 30
+  RaceDay = Sunday
+  RaceStart = 14:00
+  RaceLaps = 70
+  RaceTime = 120
+
+  //RULES
+    FormationSpeedKPH = 100
+	RaceRefuelling = 1
+	SafetyCarRoadMult=2.00
+	SafetyCarOvalMult=0.20
+	SpinRoadSeverity=0.0
+	SpinOvalSeverity=0.30
+	PitSpeedingAllowance = 4.0
+	LuckyDog = 0
+	MinimumYellowLaps = 2
+	RandomYellowLaps = 1
+	ClosePits = 1
+	PitsClosedLaps = 1
+	LeadYellowLaps = 0
+	ClosedPitPenalty = 0
+	LocalYellowsRoad = 1
+	LocalYellowsOval = 0
+	PrivateQualifying = 0
+	AdditivePenalties = 1
+	LapsToServePenalty = 3
+	PassingBeforeLineOval=3
+	PassingBeforeLineRoad=3
+	FreezeOrder = 1
+	FinishUnderCaution = 0
+	CountCautionLaps = 1
+	DoubleFileRestarts=0
+	ParcFerme = 0
+	ParcFermeFuel = 0.0
+	ParcFermeTires = 0
+	ParcFermeSetup = 0
+	FreeSettings = 255
+    BlueFlags = 1
+    AIBlueFlagCurveRadius = 500 
+    AIBlueFlagCourtesyThreshold = 0.5
+    AIBlueFlagReactionTime = 30 
+    AILiftUnderBlue = 0.5
+	TimedRaceNonLeaderLaps = 2 	
+}
+
+DriveAnyUnlocked = 2         // 0 = must own to drive, 1 = must be unlocked to drive, 2 = drive anything
+BaseCreditMult = 0.0         // base which is multiplied by all the other multipliers
+LapMoneyMult = 0.0           // laps completed (based roughly on expected lap times)
+LapExpMult = 0.0
+FineMoneyMult = 1.0          // fines
+FineExpMult = 0.0
+PoleSingleMoneyMult = 1.0    // pole positions in single player
+PoleSingleExpMult = 1.0
+PoleCareerMoneyMult = 1.0    // pole positions in career mode
+PoleCareerExpMult = 1.0
+PoleMultiMoneyMult = 1.0     // pole positions in multiplayer
+PoleMultiExpMult = 1.0
+WinSingleMoneyMult = 1.0     // wins in single player
+WinSingleExpMult = 1.0
+WinCareerMoneyMult = 1.0     // wins in career mode
+WinCareerExpMult = 1.0
+WinMultiMoneyMult = 1.0      // wins in multiplayer
+WinMultiExpMult = 1.0
+PointsSingleMoneyMult = 1.0  // points in single player
+PointsSingleExpMult = 1.0
+PointsCareerMoneyMult = 1.0  // points in career mode
+PointsCareerExpMult = 1.0
+PointsMultiMoneyMult = 1.0   // points in multiplayer
+PointsMultiExpMult = 1.0
+
+PitOrderByQualifying = false  // whether to set the pit order in the race by qualifying results
+PitGroupOrder
+{
+ // format is: PitGroup = <# of vehicles sharing pit>, <groupname>
+ PitGroup = 2, Group1
+ PitGroup = 2, Group2
+ PitGroup = 2, Group3
+ PitGroup = 2, Group4
+ PitGroup = 2, Group5
+ PitGroup = 2, Group6
+ PitGroup = 2, Group7
+ PitGroup = 2, Group8
+ PitGroup = 2, Group9
+ PitGroup = 2, Group10
+ PitGroup = 2, Group11
+ PitGroup = 2, Group12
+ PitGroup = 2, Group13
+ PitGroup = 2, Group14
+ PitGroup = 2, Group15
+ PitGroup = 2, Group16
+ PitGroup = 2, Group17
+ PitGroup = 2, Group18
+ PitGroup = 2, Group19
+ PitGroup = 2, Group20
+ PitGroup = 2, Group21
+ PitGroup = 2, Group22
+ PitGroup = 2, Group23
+ PitGroup = 2, Group24
+ PitGroup = 2, Group25
+}
+
+DRS 
+{
+ TestDay = -1 // -1 Disabled, 0 free to use DRS if available, 1 only in DRS Zones, 2 only in DRS Zones within detection time lapse.
+ Practice1 = -1
+ Practice2 = -1
+ Practice3 = -1
+ Practice4 = -1
+ Qualify1 = -1
+ Qualify2 = -1
+ Qualify3 = -1
+ Qualify4 = -1
+ Warmup = -1
+ Race1 = -1
+ Race2 = -1
+ Race2 = -1
+ Race2 = -1
+ Minimun Laps = 2
+ Detection Time = 1.0
+}
+
+TireRules = 0 // Force compound restrictions on GDB
