@@ -2133,9 +2133,9 @@ DropoffSpeedMultiplier=0.00001
 DropoffLoadMultiplier=0.00003
 DropoffTemperatureMultiplier=0.5
 TireCompoundMultiplier=0.9
-Temperatures=(90,40)
+Temperatures=(85,40)
 OptimumPressure=(150,0.009)
-GripTempPress=(5.50, 0.00, 1.00)      // Grip effects of being below temp,above temp, and off-pressure (higher number -> faster grip dropoff)
+GripTempPress=(4.70, 0.00, 1.00)      // Grip effects of being below temp,above temp, and off-pressure (higher number -> faster grip dropoff)
 //
 REAR:
 DryLatLong=(1.890, 1.890)
@@ -2182,7 +2182,7 @@ DropoffSpeedMultiplier=0.00001
 DropoffLoadMultiplier=0.00003
 DropoffTemperatureMultiplier=0.5
 TireCompoundMultiplier=0.9
-Temperatures=(90,40)
+Temperatures=(87,40)
 OptimumPressure=(150,0.009)
 GripTempPress=(5.00, 0.00, 1.00)
 
