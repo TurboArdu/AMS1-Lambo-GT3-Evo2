@@ -1,9 +1,8 @@
 [GENERAL]
 Rules=0                         // what rules to apply to garage setups (0=none,1=stock car)
 GarageDisplayFlags=7           // how settings are displayed in garage (add): 1=rear downforce value (vs. angle), 2=radiator (vs. grille tape), 4=more gear info, 8+16=front downforce/wing/splitter/air dam, 32+64=rear downforce/wing/spoiler
-FeelerFlags=14                   // how collision feelers are generated (add): 1=box influence 2=reduce wall-jumping 4=allow adjustment hack 8=top directions
 Mass=1340 //BOP //INITIAL: 1340.0 // all mass except fuel (1250kg car + 35kg ballast + 80kg driver weight)
-Inertia=(1651.5, 2057.9, 634.5) // all inertia except fuel // (1651.5,2286.5,634.5) orig
+Inertia=(1651.5, 1955.8, 411.2) // all inertia except fuel // (1651.5,2286.5,634.5) orig
 FuelTankPos=(0.000, 0.200, -0.900)  // location of tank affects center of gravity (very close and even slightly ahead of CG in F1)
 FuelTankMotion=(60, 0.7)      // simple model of fuel movement in tank (spring rate per kg,critical damping ratio)
 Notes="Lamborghini Huracan GT3 Evo 2" //Lamborghini Huracan GT3 - 105°C optimum oil temp"
@@ -22,15 +21,15 @@ Undertray00=(0.580,0.000,-0.864)  // offset from center of car,and between axles
 Undertray01=(-0.580,0.000,-0.864)  // offset from center of car,and between axles// RF (Right front corner of splitter)
 Undertray02=(0.300,0.000,1.479)  // offset from center of car,and between axles // LR (Left rear corner of floor
 Undertray03=(-0.300,0.000,1.479)  // offset from center of car,and between axles // RR (Right rear corner of floor)
-Undertray04=(0.350,0.020,-2.400)  // offset from center of car,and between axles// Left center front nose
-Undertray05=(-0.350,0.020,-2.400)  // offset from center of car,and between axles// Right center front nose
+Undertray04=(0.350,0.000,-2.400)  // offset from center of car,and between axles// Left center front nose
+Undertray05=(-0.350,0.000,-2.400)  // offset from center of car,and between axles// Right center front nose
 Undertray06=(0.85,0.000,0.000)  // offset from center of car,and between axles //  Center/bottom of Left rocker panel
 Undertray07=(-0.85,0.000,0.000)  // offset from center of car,and between axles //  Center/bottom of right rocker panel
 Undertray08=(0.35,0.000,-0.900)  // offset from center of car,and between axles//  Floor LF corner
 Undertray09=(-0.35,0.000,-0.900)  // offset from center of car,and between axles//  Floor RF corner
-Undertray10=(0.610,0.020,2.155)  // offset from center of car,and between axles //  Diffuser LR corner
-Undertray11=(-0.610,0.020,2.155)  // offset from center of car,and between axles //  Diffuser RR corner
-UndertrayParams=(225000,12500,2) // undertray spring rate,damper rate,and coefficient of friction
+Undertray10=(0.610,0.000,2.155)  // offset from center of car,and between axles //  Diffuser LR corner
+Undertray11=(-0.610,0.000,2.155)  // offset from center of car,and between axles //  Diffuser RR corner
+UndertrayParams=(250000,12500,2) // undertray spring rate,damper rate,and coefficient of friction
 TireBrand=Lambo_Huracan.tbc                  // must appear before tire compound setting (references *.tbc file)
 FrontTireCompoundSetting=1         // Front compound index within brand
 RearTireCompoundSetting=1          // Rear compound index within brand
@@ -67,17 +66,18 @@ AIStartMerge=10 //How long to merge at the start: min 3.0, max 20.0
 AISuddenMoveScalar=0.5
 AIMaxAggression=0.6
 //
-FeelerOffset=(0.0,0.0,0.0) // offset from cg to use when generating feelers
+FeelerFlags=14                   // how collision feelers are generated (add): 1=box influence 2=reduce wall-jumping 4=allow adjustment hack 8=top directions
+FeelerOffset=(0.000,0.000,0.000) // offset from cg to use when generating feelers
 FeelersAtCGHeight=1 // whether corner and side feelers are automatically adjusted to CG height
-FeelerFrontLeft=(0.930,0.050,-2.300) // front-left corner collision feeler
-FeelerFrontRight=(-0.930,0.050,-2.300) // front-right corner collision feeler
-FeelerRearLeft=(0.930,0.050,2.300) // rear-left corner collision feeler
-FeelerRearRight=(-0.930,0.050,2.300) // rear-right corner collision feeler
-FeelerFront=(0.000,0.050,-2.30) // front side collision feeler
-FeelerRear=(0.000,0.050,2.580) // rear side collision feeler
-FeelerRight=(-0.980,0.050,0.000) // right side collision feeler
-FeelerLeft=(0.980,0.050,0.000) // left side collision feeler
-FeelerBottom=(0.000,0.050,0.000) // bottom feeler
+FeelerFrontLeft=(1.010,0.080,-2.400) // front-left corner collision feeler
+FeelerFrontRight=(-1.010,0.080,-2.400) // front-right corner collision feeler
+FeelerRearLeft=(1.005,0.080,2.155) // rear-left corner collision feeler
+FeelerRearRight=(-1.005,0.080,2.155) // rear-right corner collision feeler
+FeelerFront=(0.000,0.080,-2.350) // front side collision feeler
+FeelerRear=(0.000,0.080,2.155) // rear side collision feeler
+FeelerRight=(-1.010,0.080,0.000) // right side collision feeler
+FeelerLeft=(1.010,0.080,0.000) // left side collision feeler
+FeelerBottom=(0.000,0.080,0.000) // bottom feeler
 FlatspotHeadShake=0.02  
 FlatspotForceFeedback=0.0001 
 FlatspotMaximumRPS=50
@@ -223,15 +223,15 @@ BrakePressureRange=(0.70,0.01,31)
 BrakePressureSetting=30
 UpshiftAlgorithm=(0.975,0.0)       
 DownshiftAlgorithm=(0.91,0.70,0.60)
-HandbrakePressRange=(0.00,0.05,1) // disabled for F1 ... intended for rally-type cars
+HandbrakePressRange=(0.000,0,1) // disabled for F1 ... intended for rally-type cars
 HandbrakePressSetting=0
 AutoUpshiftGripThresh=0.63          // auto upshift waits until all driven wheels have this much grip (reasonable range: 0.4-0.9)
 AutoDownshiftGripThresh=0.63        // auto downshift waits until all driven wheels have this much grip (reasonable range: 0.4-0.9)
 TractionControlGrip=(1.00,0.20)    // average driven wheel grip multiplied by 1st number,then added to 2nd
 TractionControlLevel=(0.30,0.90)   // effect of grip on throttle for low TC and high TC
-ABS4Wheel=1                         // 0 = old-style single brake pulse,1 = more effective 4-wheel ABS
+ABS4Wheel=0                         // 0 = old-style single brake pulse,1 = more effective 4-wheel ABS
 ABSGrip=(1.00,0.20)                // grip multiplied by 1st number and added to 2nd
-ABSLevel=(0.30,0.70)               // effect of grip on brakes for low ABS and high ABS
+ABSLevel=(0.30,0.90)               // effect of grip on brakes for low ABS and high ABS
 OnboardBrakeBias=1                 // Whether brake bias is allowed onboard
 ThrottleControlChange=1
 ThrottleControlAidLevel=(0,3)
@@ -282,9 +282,9 @@ Gear6Setting=7
 DiffPumpTorque=0                    // at 100% pump diff setting,the torque redirected per wheelspeed difference in radians/sec (roughly 1.2kph)
 DiffPumpRange=(0.00,0.0,0)
 DiffPumpSetting=0
-DiffPowerRange=(0.16,0,1)        // fraction of power-side input torque transferred through diff
+DiffPowerRange=(0.167,0,1)        // fraction of power-side input torque transferred through diff
 DiffPowerSetting=0                // (not implemented for four-wheel drive)
-DiffCoastRange=(0.33,0,1)        // fraction of coast-side input torque transferred through diff
+DiffCoastRange=(0.333,0,1)        // fraction of coast-side input torque transferred through diff
 DiffCoastSetting=0                 // (not implemented for four-wheel drive)
 DiffPreloadRange=(50,10,16)         // preload torque that must be overcome to have wheelspeed difference
 DiffPreloadSetting=4                // (not implemented for four-wheel drive)
