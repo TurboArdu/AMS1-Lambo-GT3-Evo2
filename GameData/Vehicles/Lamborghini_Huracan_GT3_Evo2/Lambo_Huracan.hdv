@@ -229,7 +229,7 @@ AutoUpshiftGripThresh=0.63          // auto upshift waits until all driven wheel
 AutoDownshiftGripThresh=0.63        // auto downshift waits until all driven wheels have this much grip (reasonable range: 0.4-0.9)
 TractionControlGrip=(1.00,0.20)    // average driven wheel grip multiplied by 1st number,then added to 2nd
 TractionControlLevel=(0.30,0.90)   // effect of grip on throttle for low TC and high TC
-ABS4Wheel=0                         // 0 = old-style single brake pulse,1 = more effective 4-wheel ABS
+ABS4Wheel=1                         // 0 = old-style single brake pulse,1 = more effective 4-wheel ABS
 ABSGrip=(1.00,0.20)                // grip multiplied by 1st number and added to 2nd
 ABSLevel=(0.30,0.90)               // effect of grip on brakes for low ABS and high ABS
 OnboardBrakeBias=1                 // Whether brake bias is allowed onboard
