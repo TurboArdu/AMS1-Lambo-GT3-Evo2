@@ -2096,7 +2096,7 @@ Width=0.325                          // Width of tire
 Rim=(0.2286, 750000.0, 7500.0, 3.0)   // Rim radius, spring rate, damper rate, minimum velocity to produce sparks
 SpringBase=100000                      // Base spring rate with no pressure (1650lb/in @ 200kpsi)
 SpringkPa=1190                     // Spring rate per unit pressure
-Damper=1000                        // Damping rate of tire
+Damper=775                        // Damping rate of tire
 SpeedEffects=(287.0,29.0)             // Speed at which grip drops to half (m/s, 0.0 to disable), speed load equivalency (see above)
 LoadSensLat=(-2.10e-6, 0.48, 19500.0)
 LoadSensLong=(-2.10e-6, 0.45, 21500.0)
@@ -2108,7 +2108,7 @@ BrakingCurve="LongRearDecel"
 TractiveCurve="LongRearAccel"
 CamberLatLong=(6.80, 0.140, 0.480)    // Peak camber angle, Lat gain at peak, longitudinal loss at 90 degrees
 RollingResistance=2700              // Resistance torque (Nm) per unit deflection (m) on ground
-PneumaticTrail=1e-6
+PneumaticTrail=2e-6
 Heating=(5.7e-1, 5.85e-3) //Heating=(5.7e-1, 5.7e-3) //(7.20e-1, 7.20e-3)            // Heat caused by (rolling, friction)
 Transfer=(8.20e-3, 2.00e-3, 2.55e-4)  // Heat transfer to (road, static air, moving air)
 HeatDistrib=(10,179.9)                // (Max camber angle, max off-pressure) that affects heat distribution (higher number -> less temperature difference)
@@ -2135,7 +2135,7 @@ DropoffTemperatureMultiplier=0.5
 TireCompoundMultiplier=0.9
 Temperatures=(85,40)
 OptimumPressure=(150,0.009)
-GripTempPress=(4.50, 0.00, 1.00)      // Grip effects of being below temp,above temp, and off-pressure (higher number -> faster grip dropoff)
+GripTempPress=(4.50, 0.00, 0.00)      // Grip effects of being below temp,above temp, and off-pressure (higher number -> faster grip dropoff)
 //
 REAR:
 DryLatLong=(1.890, 1.890)
@@ -2145,7 +2145,7 @@ Width=0.325
 Rim=(0.2286, 750000.0, 7500.0, 3.0)   // Rim radius, spring rate, damper rate, minimum velocity to produce sparks
 SpringBase=106000                   
 SpringkPa=1150
-Damper=1000
+Damper=775
 SpeedEffects=(287.0,29.0)
 LoadSensLat=(-2.10e-6, 0.48, 19500.0)
 LoadSensLong=(-2.10e-6, 0.45, 21500.0)
@@ -2157,7 +2157,7 @@ BrakingCurve="LongRearDecel"
 TractiveCurve="LongRearAccel"
 CamberLatLong=(6.80, 0.140, 0.480)
 RollingResistance=2700
-PneumaticTrail=1e-6
+PneumaticTrail=2e-6
 Heating=(5.20e-1, 5.70e-3) //Heating=(5.7e-1, 5.7e-3) //(5.70e-1, 5.70e-3)           
 Transfer=(8.20e-3, 2.00e-3, 2.55e-4) 
 HeatDistrib=(10,179.9)
@@ -2184,5 +2184,5 @@ DropoffTemperatureMultiplier=0.5
 TireCompoundMultiplier=0.9
 Temperatures=(87,40)
 OptimumPressure=(150,0.009)
-GripTempPress=(5.00, 0.00, 1.00)
+GripTempPress=(5.00, 0.00, 0.00)
 
