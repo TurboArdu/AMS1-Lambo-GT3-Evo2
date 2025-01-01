@@ -2091,7 +2091,7 @@ Name="Slick"
 FRONT:                                // Arguments:ALL,FRONT,REAR,LEFT,RIGHT,FRONTLEFT, FRONTRIGHT,REARLEFT,REARRIGHT
 DryLatLong=(1.890, 1.890)             // Lat/longitudinal coefficients in dry weather
 Radius=0.339                         // Radius of tire
-RadiusRPM=1.01e-6                     // Increased radius per unit RPM
+RadiusRPM=1e-6                     // Increased radius per unit RPM
 Width=0.325                          // Width of tire
 Rim=(0.2286, 750000.0, 7500.0, 3.0)   // Rim radius, spring rate, damper rate, minimum velocity to produce sparks
 SpringBase=40000                      // Base spring rate with no pressure (1650lb/in @ 200kpsi)
@@ -2109,7 +2109,7 @@ TractiveCurve="LongRearAccel"
 CamberLatLong=(6.80, 0.140, 0.480)    // Peak camber angle, Lat gain at peak, longitudinal loss at 90 degrees
 RollingResistance=2700              // Resistance torque (Nm) per unit deflection (m) on ground
 PneumaticTrail=1.92e-6
-Heating=(5.85e-1, 5.85e-3) //Heating=(5.7e-1, 5.7e-3) //(7.20e-1, 7.20e-3)            // Heat caused by (rolling, friction)
+Heating=(5.7e-1, 5.85e-3) //Heating=(5.7e-1, 5.7e-3) //(7.20e-1, 7.20e-3)            // Heat caused by (rolling, friction)
 Transfer=(8.20e-3, 2.00e-3, 2.55e-4)  // Heat transfer to (road, static air, moving air)
 HeatDistrib=(10,179.9)                // (Max camber angle, max off-pressure) that affects heat distribution (higher number -> less temperature difference)
 AirTreadRate=0.039                    // Heat transfer between tread and inside air
@@ -2135,7 +2135,7 @@ DropoffTemperatureMultiplier=0.5
 TireCompoundMultiplier=0.9
 Temperatures=(85,40)
 OptimumPressure=(150,0.009)
-GripTempPress=(4.70, 0.00, 1.00)      // Grip effects of being below temp,above temp, and off-pressure (higher number -> faster grip dropoff)
+GripTempPress=(4.50, 0.00, 1.00)      // Grip effects of being below temp,above temp, and off-pressure (higher number -> faster grip dropoff)
 //
 REAR:
 DryLatLong=(1.890, 1.890)
@@ -2158,7 +2158,7 @@ TractiveCurve="LongRearAccel"
 CamberLatLong=(6.80, 0.140, 0.480)
 RollingResistance=2700
 PneumaticTrail=1.92e-6
-Heating=(5.70e-1, 5.70e-3) //Heating=(5.7e-1, 5.7e-3) //(5.70e-1, 5.70e-3)           
+Heating=(5.20e-1, 5.70e-3) //Heating=(5.7e-1, 5.7e-3) //(5.70e-1, 5.70e-3)           
 Transfer=(8.20e-3, 2.00e-3, 2.55e-4) 
 HeatDistrib=(10,179.9)
 AirTreadRate=0.031 
