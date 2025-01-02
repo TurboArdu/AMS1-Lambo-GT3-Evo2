@@ -2108,7 +2108,7 @@ BrakingCurve="LongRearDecel"
 TractiveCurve="LongRearAccel"
 CamberLatLong=(6.80, 0.140, 0.480)    // Peak camber angle, Lat gain at peak, longitudinal loss at 90 degrees
 RollingResistance=2700              // Resistance torque (Nm) per unit deflection (m) on ground
-PneumaticTrail=2e-6
+PneumaticTrail=1e-6
 Heating=(5.7e-1, 5.85e-3) //Heating=(5.7e-1, 5.7e-3) //(7.20e-1, 7.20e-3)            // Heat caused by (rolling, friction)
 Transfer=(8.20e-3, 2.00e-3, 2.55e-4)  // Heat transfer to (road, static air, moving air)
 HeatDistrib=(10,179.9)                // (Max camber angle, max off-pressure) that affects heat distribution (higher number -> less temperature difference)
@@ -2157,7 +2157,7 @@ BrakingCurve="LongRearDecel"
 TractiveCurve="LongRearAccel"
 CamberLatLong=(6.80, 0.140, 0.480)
 RollingResistance=2700
-PneumaticTrail=2e-6
+PneumaticTrail=1e-6
 Heating=(5.20e-1, 5.70e-3) //Heating=(5.7e-1, 5.7e-3) //(5.70e-1, 5.70e-3)           
 Transfer=(8.20e-3, 2.00e-3, 2.55e-4) 
 HeatDistrib=(10,179.9)
