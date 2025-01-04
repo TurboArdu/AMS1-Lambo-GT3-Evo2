@@ -1,4 +1,3 @@
-
 //
 //
 //
@@ -2089,15 +2088,15 @@ Data:
 [COMPOUND]
 Name="Slick"
 FRONT:                                // Arguments:ALL,FRONT,REAR,LEFT,RIGHT,FRONTLEFT, FRONTRIGHT,REARLEFT,REARRIGHT
-DryLatLong=(1.890, 1.890)             // Lat/longitudinal coefficients in dry weather
+DryLatLong=(1.787, 1.787)             // Lat/longitudinal coefficients in dry weather
 Radius=0.339                         // Radius of tire
-RadiusRPM=1e-6                     // Increased radius per unit RPM
+RadiusRPM=2e-6                     // Increased radius per unit RPM
 Width=0.325                          // Width of tire
 Rim=(0.2286, 750000.0, 7500.0, 3.0)   // Rim radius, spring rate, damper rate, minimum velocity to produce sparks
 SpringBase=98594                     // Base spring rate with no pressure (1650lb/in @ 200kpsi)
 SpringkPa=967                     // Spring rate per unit pressure
 Damper=1864                        // Damping rate of tire
-SpeedEffects=(287.0,29.0)             // Speed at which grip drops to half (m/s, 0.0 to disable), speed load equivalency (see above)
+SpeedEffects=(500,0)             // Speed at which grip drops to half (m/s, 0.0 to disable), speed load equivalency (see above)
 LoadSensLat=(-2.10e-6, 0.48, 19500.0)
 LoadSensLong=(-2.10e-6, 0.45, 21500.0)
 LatPeak=(0.100, 0.080, 8200.0)
@@ -2106,14 +2105,14 @@ HeatBasePeak=(0,0)                    // Static peak slip to compute friction he
 LatCurve="LatRear"
 BrakingCurve="LongRearDecel"
 TractiveCurve="LongRearAccel"
-CamberLatLong=(6.80, 0.140, 0.480)    // Peak camber angle, Lat gain at peak, longitudinal loss at 90 degrees
+CamberLatLong=(4.80, 0.00, 0.00)    // Peak camber angle, Lat gain at peak, longitudinal loss at 90 degrees
 RollingResistance=2700              // Resistance torque (Nm) per unit deflection (m) on ground
 PneumaticTrail=1e-6
 Heating=(5.7e-1, 5.85e-3) //Heating=(5.7e-1, 5.7e-3) //(7.20e-1, 7.20e-3)            // Heat caused by (rolling, friction)
 Transfer=(8.20e-3, 2.00e-3, 2.55e-4)  // Heat transfer to (road, static air, moving air)
 HeatDistrib=(10,179.9)                // (Max camber angle, max off-pressure) that affects heat distribution (higher number -> less temperature difference)
 AirTreadRate=0.039                    // Heat transfer between tread and inside air
-WearRate=0.205e-6                     // Wear rate constant
+WearRate=0    //0.205e-6                     // Wear rate constant
 //WearGrip1=(0.99,0.98,0.975,0.97,0.965,0.960,0.955,0.95)
 //WearGrip2=(0.944,0.938,0.932,0.926,0.920,0.914,0.908,0.902)
 Softness=1.0 //0.60                   // Softness is now just for AI strategic use
@@ -2138,15 +2137,15 @@ OptimumPressure=(150,0.009)
 GripTempPress=(4.50, 0.00, 0.00)      // Grip effects of being below temp,above temp, and off-pressure (higher number -> faster grip dropoff)
 //
 REAR:
-DryLatLong=(1.890, 1.890)
+DryLatLong=(1.797, 1.797)
 Radius=0.35173
-RadiusRPM=1.01e-6
+RadiusRPM=2e-6
 Width=0.325
 Rim=(0.2286, 750000.0, 7500.0, 3.0)   // Rim radius, spring rate, damper rate, minimum velocity to produce sparks
 SpringBase=98594
 SpringkPa=967
 Damper=1864
-SpeedEffects=(287.0,29.0)
+SpeedEffects=(500,0)
 LoadSensLat=(-2.10e-6, 0.48, 19500.0)
 LoadSensLong=(-2.10e-6, 0.45, 21500.0)
 LatPeak=(0.100, 0.080, 8200.0)
@@ -2155,14 +2154,14 @@ HeatBasePeak=(0,0)
 LatCurve="LatRear"
 BrakingCurve="LongRearDecel"
 TractiveCurve="LongRearAccel"
-CamberLatLong=(6.80, 0.140, 0.480)
+CamberLatLong=(4.80, 0.00, 0.00)
 RollingResistance=2700
 PneumaticTrail=1e-6
 Heating=(5.20e-1, 5.70e-3) //Heating=(5.7e-1, 5.7e-3) //(5.70e-1, 5.70e-3)           
 Transfer=(8.20e-3, 2.00e-3, 2.55e-4) 
 HeatDistrib=(10,179.9)
 AirTreadRate=0.031 
-WearRate=0.205e-6
+WearRate=0    //0.205e-6
 //WearGrip1=(0.99,0.98,0.975,0.97,0.965,0.960,0.955,0.95)
 //WearGrip2=(0.944,0.938,0.932,0.926,0.920,0.914,0.908,0.902)
 Softness=1.0 //0.60
@@ -2185,4 +2184,3 @@ TireCompoundMultiplier=0.9
 Temperatures=(87,40)
 OptimumPressure=(150,0.009)
 GripTempPress=(5.00, 0.00, 0.00)
-

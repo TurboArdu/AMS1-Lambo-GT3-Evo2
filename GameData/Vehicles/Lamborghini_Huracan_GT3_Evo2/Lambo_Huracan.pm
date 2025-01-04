@@ -137,37 +137,37 @@ name=fr_steering posbody=body negbody=fr_spindle pos=(-0.3972,-0.0572,-1.4440) n
 
 // Rear left suspension (2 A-arms + 1 straight link = 5 links)
 [BAR] // forward upper arm
-posbody=body negbody=rl_spindle pos=(0.5228,0.0807,1.2010) neg=(0.7213,0.1490,1.2981)
+posbody=body negbody=rl_spindle pos=(0.5228,0.0937,1.2010) neg=(0.7213,0.1290,1.2881)
 
 [BAR] // rearward upper arm
-posbody=body negbody=rl_spindle pos=(0.5234,0.1020,1.5654) neg=(0.7213,0.1490,1.2981)
+posbody=body negbody=rl_spindle pos=(0.5234,0.1150,1.5064) neg=(0.7213,0.1290,1.2881)
 
 [BAR] // forward lower arm
-posbody=body negbody=rl_spindle pos=(0.4203,-0.1242,1.1170) neg=(0.7531,-0.1370,1.2416)
+posbody=body negbody=rl_spindle pos=(0.4203,-0.1111,1.1170) neg=(0.7531,-0.1290,1.2416)
 
 [BAR] // rearward lower arm
-posbody=body negbody=rl_spindle pos=(0.4061,-0.1568,1.4796) neg=(0.7531,-0.1370,1.2416)
+posbody=body negbody=rl_spindle pos=(0.4061,-0.1438,1.4796) neg=(0.7531,-0.1290,1.2416)
 
 [BAR] // straight link
-posbody=body negbody=rl_spindle pos=(0.4463,-0.0750,1.5020) neg=(0.7578,-0.0469,1.4570)
+posbody=body negbody=rl_spindle pos=(0.4463,-0.0800,1.4970) neg=(0.7578,-0.0729,1.5020)
 
 
 
 // Rear right suspension (2 A-arms + 1 straight link = 5 links)
 [BAR] // forward upper arm
-posbody=body negbody=rr_spindle pos=(-0.5228,0.0807,1.2010) neg=(-0.7213,0.1490,1.2981)
+posbody=body negbody=rr_spindle pos=(-0.5228,0.0937,1.2010) neg=(-0.7213,0.1290,1.2881)
 
 [BAR] // rearward upper arm
-posbody=body negbody=rr_spindle pos=(-0.5234,0.1020,1.5654) neg=(-0.7213,0.1490,1.2981)
+posbody=body negbody=rr_spindle pos=(-0.5234,0.1150,1.5064) neg=(-0.7213,0.1290,1.2881)
 
 [BAR] // forward lower arm
-posbody=body negbody=rr_spindle pos=(-0.4203,-0.1242,1.1170) neg=(-0.7531,-0.1370,1.2416)
+posbody=body negbody=rr_spindle pos=(-0.4203,-0.1111,1.1170) neg=(-0.7531,-0.1290,1.2416)
 
 [BAR] // rearward lower arm
-posbody=body negbody=rr_spindle pos=(-0.4061,-0.1568,1.4796) neg=(-0.7531,-0.1370,1.2416)
+posbody=body negbody=rr_spindle pos=(-0.4061,-0.1438,1.4796) neg=(-0.7531,-0.1290,1.2416)
 
 [BAR] // straight link
-posbody=body negbody=rr_spindle pos=(-0.4463,-0.0750,1.5020) neg=(-0.7578,-0.0469,1.4570)
+posbody=body negbody=rr_spindle pos=(-0.4463,-0.0800,1.4970) neg=(-0.7578,-0.0729,1.5020)
 
 
 // Rear wheel and spindle connections
