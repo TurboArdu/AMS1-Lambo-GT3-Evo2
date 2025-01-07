@@ -1,12 +1,12 @@
  SearchPath=<TEAMDIR>..\
  SearchPath=<TEAMDIR>
  SearchPath=<VEHDIR>
- SearchPath=<VEHDIR>\AMS_GT3_SERIES\Lamborghini
- MASFile=AMS_GT3_SERIES\Lamborghini_Huracan\Lambo_Huracan.mas
- MASFile=AMS_GT3_SERIES\Lamborghini_Huracan\Lambo_Huracan_CPIT.mas
- MASFile=AMS_GT3_SERIES\Lamborghini_Huracan\Lambo_Huracan_TEX.mas
- MASFile=AMS_GT3_SERIES\Lamborghini_Huracan\Lambo_Huracan_Lights_1.mas
- MASFile=AMS_GT3_SERIES\AMS_GT3_SERIES.mas
+ SearchPath=<VEHDIR>Lamborghini_Huracan_GT3_Evo2
+ MASFile=Lamborghini_Huracan_GT3_Evo2\Lambo_Huracan.mas
+ MASFile=Lamborghini_Huracan_GT3_Evo2\Lambo_Huracan_CPIT.mas
+ MASFile=Lamborghini_Huracan_GT3_Evo2\Lambo_Huracan_TEX.mas
+ MASFile=Lamborghini_Huracan_GT3_Evo2\Lambo_Huracan_Lights_1.mas
+ MASFile=Lamborghini_Huracan_GT3_Evo2\AMS_GT3_SERIES.mas
 
 Instance=SLOT<ID>
 {
